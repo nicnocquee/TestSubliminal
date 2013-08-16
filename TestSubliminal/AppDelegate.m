@@ -10,6 +10,10 @@
 
 #import "ViewController.h"
 
+#if INTEGRATION_TESTING
+#import <Subliminal/Subliminal.h>
+#endif
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -20,6 +24,11 @@
     UINavigationController *navCon = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     self.window.rootViewController = navCon;
     [self.window makeKeyAndVisible];
+    
+#if INTEGRATION_TESTING
+    [[SLTestController sharedTestController] runTests:[SLTest allTests] withCompletionBlock:nil];
+#endif
+    
     return YES;
 }
 

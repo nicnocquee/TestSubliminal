@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		039DFBBF17BDC1B9006FD183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DFBBE17BDC1B9006FD183 /* ViewController.m */; };
+		039DFBC217BDC509006FD183 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CB7D3A17BDC06000FD2D11 /* main.m */; };
+		039DFBC317BDC509006FD183 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CB7D3E17BDC06000FD2D11 /* AppDelegate.m */; };
+		039DFBC417BDC509006FD183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DFBBE17BDC1B9006FD183 /* ViewController.m */; };
+		039DFBC617BDC509006FD183 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CB7D2E17BDC05F00FD2D11 /* UIKit.framework */; };
+		039DFBC717BDC509006FD183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CB7D3017BDC05F00FD2D11 /* Foundation.framework */; };
+		039DFBC817BDC509006FD183 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CB7D3217BDC05F00FD2D11 /* CoreGraphics.framework */; };
+		039DFBCA17BDC509006FD183 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03CB7D3717BDC06000FD2D11 /* InfoPlist.strings */; };
+		039DFBCB17BDC509006FD183 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CB7D4017BDC06000FD2D11 /* Default.png */; };
+		039DFBCC17BDC509006FD183 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CB7D4217BDC06000FD2D11 /* Default@2x.png */; };
+		039DFBCD17BDC509006FD183 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CB7D4417BDC06000FD2D11 /* Default-568h@2x.png */; };
+		039DFBD317BDC558006FD183 /* libSubliminal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 039DFBB817BDC17C006FD183 /* libSubliminal.a */; };
+		039DFBD717BDC570006FD183 /* Integration Tests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 039DFBD617BDC570006FD183 /* Integration Tests.xcconfig */; };
+		039DFBD917BDC620006FD183 /* CollectionViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DFBD817BDC620006FD183 /* CollectionViewTest.m */; };
 		03CB7D2F17BDC05F00FD2D11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CB7D2E17BDC05F00FD2D11 /* UIKit.framework */; };
 		03CB7D3117BDC05F00FD2D11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CB7D3017BDC05F00FD2D11 /* Foundation.framework */; };
 		03CB7D3317BDC05F00FD2D11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CB7D3217BDC05F00FD2D11 /* CoreGraphics.framework */; };
@@ -41,12 +54,23 @@
 			remoteGlobalIDString = F0AC809416BB299500C5D5C0;
 			remoteInfo = "Subliminal Integration Tests";
 		};
+		039DFBD417BDC561006FD183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039DFBAF17BDC17C006FD183 /* Subliminal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F0695D8A16011515000B05D0;
+			remoteInfo = Subliminal;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		039DFBAF17BDC17C006FD183 /* Subliminal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Subliminal.xcodeproj; path = Subliminal/Subliminal.xcodeproj; sourceTree = "<group>"; };
 		039DFBBD17BDC1B9006FD183 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		039DFBBE17BDC1B9006FD183 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		039DFBD117BDC509006FD183 /* TestSubliminal (Integration Tests).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestSubliminal (Integration Tests).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		039DFBD217BDC509006FD183 /* Integration Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Integration Tests-Info.plist"; path = "/Users/nico/Dropbox/Project/Experiments/TestSubliminal/Integration Tests/Integration Tests-Info.plist"; sourceTree = "<absolute>"; };
+		039DFBD617BDC570006FD183 /* Integration Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Integration Tests.xcconfig"; path = "Subliminal/Supporting Files/Xcode/Integration Tests.xcconfig"; sourceTree = "<group>"; };
+		039DFBD817BDC620006FD183 /* CollectionViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewTest.m; sourceTree = "<group>"; };
 		03CB7D2B17BDC05F00FD2D11 /* TestSubliminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSubliminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CB7D2E17BDC05F00FD2D11 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03CB7D3017BDC05F00FD2D11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,6 +87,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		039DFBC517BDC509006FD183 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039DFBD317BDC558006FD183 /* libSubliminal.a in Frameworks */,
+				039DFBC617BDC509006FD183 /* UIKit.framework in Frameworks */,
+				039DFBC717BDC509006FD183 /* Foundation.framework in Frameworks */,
+				039DFBC817BDC509006FD183 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03CB7D2817BDC05F00FD2D11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,7 +114,10 @@
 		039DFBAE17BDC164006FD183 /* Integration Tests */ = {
 			isa = PBXGroup;
 			children = (
+				039DFBD217BDC509006FD183 /* Integration Tests-Info.plist */,
+				039DFBD617BDC570006FD183 /* Integration Tests.xcconfig */,
 				039DFBAF17BDC17C006FD183 /* Subliminal.xcodeproj */,
+				039DFBD817BDC620006FD183 /* CollectionViewTest.m */,
 			);
 			path = "Integration Tests";
 			sourceTree = "<group>";
@@ -108,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				03CB7D2B17BDC05F00FD2D11 /* TestSubliminal.app */,
+				039DFBD117BDC509006FD183 /* TestSubliminal (Integration Tests).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +190,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		039DFBC017BDC509006FD183 /* Integration Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039DFBCE17BDC509006FD183 /* Build configuration list for PBXNativeTarget "Integration Tests" */;
+			buildPhases = (
+				039DFBC117BDC509006FD183 /* Sources */,
+				039DFBC517BDC509006FD183 /* Frameworks */,
+				039DFBC917BDC509006FD183 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				039DFBD517BDC561006FD183 /* PBXTargetDependency */,
+			);
+			name = "Integration Tests";
+			productName = TestSubliminal;
+			productReference = 039DFBD117BDC509006FD183 /* TestSubliminal (Integration Tests).app */;
+			productType = "com.apple.product-type.application";
+		};
 		03CB7D2A17BDC05F00FD2D11 /* TestSubliminal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03CB7D4E17BDC06000FD2D11 /* Build configuration list for PBXNativeTarget "TestSubliminal" */;
@@ -196,6 +253,7 @@
 			projectRoot = "";
 			targets = (
 				03CB7D2A17BDC05F00FD2D11 /* TestSubliminal */,
+				039DFBC017BDC509006FD183 /* Integration Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +283,18 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		039DFBC917BDC509006FD183 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039DFBCA17BDC509006FD183 /* InfoPlist.strings in Resources */,
+				039DFBCB17BDC509006FD183 /* Default.png in Resources */,
+				039DFBCC17BDC509006FD183 /* Default@2x.png in Resources */,
+				039DFBCD17BDC509006FD183 /* Default-568h@2x.png in Resources */,
+				039DFBD717BDC570006FD183 /* Integration Tests.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03CB7D2917BDC05F00FD2D11 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +309,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		039DFBC117BDC509006FD183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039DFBC217BDC509006FD183 /* main.m in Sources */,
+				039DFBC317BDC509006FD183 /* AppDelegate.m in Sources */,
+				039DFBC417BDC509006FD183 /* ViewController.m in Sources */,
+				039DFBD917BDC620006FD183 /* CollectionViewTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03CB7D2717BDC05F00FD2D11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +331,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		039DFBD517BDC561006FD183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Subliminal;
+			targetProxy = 039DFBD417BDC561006FD183 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		03CB7D3717BDC06000FD2D11 /* InfoPlist.strings */ = {
@@ -263,6 +352,26 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		039DFBCF17BDC509006FD183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039DFBD617BDC570006FD183 /* Integration Tests.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestSubliminal/TestSubliminal-Prefix.pch";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		039DFBD017BDC509006FD183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039DFBD617BDC570006FD183 /* Integration Tests.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestSubliminal/TestSubliminal-Prefix.pch";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		03CB7D4C17BDC06000FD2D11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -344,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		039DFBCE17BDC509006FD183 /* Build configuration list for PBXNativeTarget "Integration Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039DFBCF17BDC509006FD183 /* Debug */,
+				039DFBD017BDC509006FD183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		03CB7D2617BDC05F00FD2D11 /* Build configuration list for PBXProject "TestSubliminal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

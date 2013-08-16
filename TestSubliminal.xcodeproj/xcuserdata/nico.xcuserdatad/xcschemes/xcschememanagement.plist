@@ -4,6 +4,18 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Integration Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>TestSubliminal copy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>TestSubliminal.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +24,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>039DFBC017BDC509006FD183</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>03CB7D2A17BDC05F00FD2D11</key>
 		<dict>
 			<key>primary</key>
