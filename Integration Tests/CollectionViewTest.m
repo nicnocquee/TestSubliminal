@@ -31,6 +31,9 @@
     SLAssertFalse([UIAElement(label5) isValid], @"Cell 5 should not be visible at this point");
     
     // now how to test for example the last cell's label?
+    SLElement *lastLabel = [SLElement elementWithAccessibilityLabel:@"This is cell 19"];
+    [lastLabel scrollToVisible];
+    SLAssertTrue([UIAElement(lastLabel) isVisible], @"Last cell should be visible at this point");
 }
 
 @end
