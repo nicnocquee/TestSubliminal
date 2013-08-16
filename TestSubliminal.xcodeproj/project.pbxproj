@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		039DFBBF17BDC1B9006FD183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DFBBE17BDC1B9006FD183 /* ViewController.m */; };
 		03CB7D2F17BDC05F00FD2D11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CB7D2E17BDC05F00FD2D11 /* UIKit.framework */; };
 		03CB7D3117BDC05F00FD2D11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CB7D3017BDC05F00FD2D11 /* Foundation.framework */; };
 		03CB7D3317BDC05F00FD2D11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CB7D3217BDC05F00FD2D11 /* CoreGraphics.framework */; };
@@ -16,11 +17,36 @@
 		03CB7D4117BDC06000FD2D11 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CB7D4017BDC06000FD2D11 /* Default.png */; };
 		03CB7D4317BDC06000FD2D11 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CB7D4217BDC06000FD2D11 /* Default@2x.png */; };
 		03CB7D4517BDC06000FD2D11 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03CB7D4417BDC06000FD2D11 /* Default-568h@2x.png */; };
-		03CB7D4817BDC06000FD2D11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CB7D4717BDC06000FD2D11 /* ViewController.m */; };
-		03CB7D4B17BDC06000FD2D11 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CB7D4917BDC06000FD2D11 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		039DFBB717BDC17C006FD183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039DFBAF17BDC17C006FD183 /* Subliminal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0695D8B16011515000B05D0;
+			remoteInfo = Subliminal;
+		};
+		039DFBB917BDC17C006FD183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039DFBAF17BDC17C006FD183 /* Subliminal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0D240521683F7130031B67C;
+			remoteInfo = "Subliminal Unit Tests";
+		};
+		039DFBBB17BDC17C006FD183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039DFBAF17BDC17C006FD183 /* Subliminal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0AC809416BB299500C5D5C0;
+			remoteInfo = "Subliminal Integration Tests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		039DFBAF17BDC17C006FD183 /* Subliminal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Subliminal.xcodeproj; path = Subliminal/Subliminal.xcodeproj; sourceTree = "<group>"; };
+		039DFBBD17BDC1B9006FD183 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		039DFBBE17BDC1B9006FD183 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		03CB7D2B17BDC05F00FD2D11 /* TestSubliminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSubliminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CB7D2E17BDC05F00FD2D11 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03CB7D3017BDC05F00FD2D11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,9 +60,6 @@
 		03CB7D4017BDC06000FD2D11 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		03CB7D4217BDC06000FD2D11 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		03CB7D4417BDC06000FD2D11 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		03CB7D4617BDC06000FD2D11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		03CB7D4717BDC06000FD2D11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		03CB7D4A17BDC06000FD2D11 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +76,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		039DFBAE17BDC164006FD183 /* Integration Tests */ = {
+			isa = PBXGroup;
+			children = (
+				039DFBAF17BDC17C006FD183 /* Subliminal.xcodeproj */,
+			);
+			path = "Integration Tests";
+			sourceTree = "<group>";
+		};
+		039DFBB017BDC17C006FD183 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				039DFBB817BDC17C006FD183 /* libSubliminal.a */,
+				039DFBBA17BDC17C006FD183 /* Subliminal (Unit Tests).octest */,
+				039DFBBC17BDC17C006FD183 /* Subliminal (Integration Tests).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		03CB7D2217BDC05F00FD2D11 = {
 			isa = PBXGroup;
 			children = (
+				039DFBAE17BDC164006FD183 /* Integration Tests */,
 				03CB7D3417BDC05F00FD2D11 /* TestSubliminal */,
 				03CB7D2D17BDC05F00FD2D11 /* Frameworks */,
 				03CB7D2C17BDC05F00FD2D11 /* Products */,
@@ -85,10 +127,9 @@
 			children = (
 				03CB7D3D17BDC06000FD2D11 /* AppDelegate.h */,
 				03CB7D3E17BDC06000FD2D11 /* AppDelegate.m */,
-				03CB7D4617BDC06000FD2D11 /* ViewController.h */,
-				03CB7D4717BDC06000FD2D11 /* ViewController.m */,
-				03CB7D4917BDC06000FD2D11 /* ViewController.xib */,
 				03CB7D3517BDC05F00FD2D11 /* Supporting Files */,
+				039DFBBD17BDC1B9006FD183 /* ViewController.h */,
+				039DFBBE17BDC1B9006FD183 /* ViewController.m */,
 			);
 			path = TestSubliminal;
 			sourceTree = "<group>";
@@ -146,12 +187,42 @@
 			mainGroup = 03CB7D2217BDC05F00FD2D11;
 			productRefGroup = 03CB7D2C17BDC05F00FD2D11 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 039DFBB017BDC17C006FD183 /* Products */;
+					ProjectRef = 039DFBAF17BDC17C006FD183 /* Subliminal.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				03CB7D2A17BDC05F00FD2D11 /* TestSubliminal */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		039DFBB817BDC17C006FD183 /* libSubliminal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSubliminal.a;
+			remoteRef = 039DFBB717BDC17C006FD183 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		039DFBBA17BDC17C006FD183 /* Subliminal (Unit Tests).octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Subliminal (Unit Tests).octest";
+			remoteRef = 039DFBB917BDC17C006FD183 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		039DFBBC17BDC17C006FD183 /* Subliminal (Integration Tests).app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Subliminal (Integration Tests).app";
+			remoteRef = 039DFBBB17BDC17C006FD183 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		03CB7D2917BDC05F00FD2D11 /* Resources */ = {
@@ -162,7 +233,6 @@
 				03CB7D4117BDC06000FD2D11 /* Default.png in Resources */,
 				03CB7D4317BDC06000FD2D11 /* Default@2x.png in Resources */,
 				03CB7D4517BDC06000FD2D11 /* Default-568h@2x.png in Resources */,
-				03CB7D4B17BDC06000FD2D11 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +245,7 @@
 			files = (
 				03CB7D3B17BDC06000FD2D11 /* main.m in Sources */,
 				03CB7D3F17BDC06000FD2D11 /* AppDelegate.m in Sources */,
-				03CB7D4817BDC06000FD2D11 /* ViewController.m in Sources */,
+				039DFBBF17BDC1B9006FD183 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +258,6 @@
 				03CB7D3817BDC06000FD2D11 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		03CB7D4917BDC06000FD2D11 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03CB7D4A17BDC06000FD2D11 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -298,6 +360,7 @@
 				03CB7D5017BDC06000FD2D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
