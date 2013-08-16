@@ -30,7 +30,7 @@
     SLElement *label5 = [SLElement elementWithAccessibilityLabel:@"This is cell 5"];
     SLAssertFalse([UIAElement(label5) isValid], @"Cell 5 should not be visible at this point");
     
-    
+    // now how to test for example the last cell's label?
 }
 
 @end
