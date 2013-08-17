@@ -1,0 +1,3 @@
+This is a sample project to show how to scroll collection view (can be table view and scroll view too) using [Subliminal](https://github.com/inkling/Subliminal) Framework.
+
+Solution from: [http://stackoverflow.com/questions/18254163/how-to-simulate-table-view-or-collection-view-scrolling-using-kif-or-subliminal](http://stackoverflow.com/questions/18254163/how-to-simulate-table-view-or-collection-view-scrolling-using-kif-or-subliminal)
