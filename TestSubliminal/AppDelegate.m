@@ -25,6 +25,7 @@
     self.window.rootViewController = navCon;
     [self.window makeKeyAndVisible];
     
+    
 #if INTEGRATION_TESTING
     [[SLTestController sharedTestController] runTests:[SLTest allTests] withCompletionBlock:nil];
 #endif

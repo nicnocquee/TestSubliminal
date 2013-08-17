@@ -7,6 +7,11 @@
 //
 
 #import "ViewController.h"
+//#import "UICollectionViewController+Additions.h"
+
+#ifdef INTEGRATION_TESTING
+#import <Subliminal/Subliminal.h>
+#endif
 
 @interface MyCell : UICollectionViewCell
 
@@ -53,6 +58,16 @@
     UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
     [flowLayout setItemSize:CGSizeMake(CGRectGetWidth(self.collectionView.frame), 100)];
     [self.collectionView registerClass:[MyCell class] forCellWithReuseIdentifier:@"myCell"];
+    
+#ifdef INTEGRATION_TESTING
+    [[SLTestController sharedTestController] registerTarget:self forAction:@selector(scrollToBottom)];
+#endif
+}
+
+- (void)dealloc {
+#ifdef INTEGRATION_TESTING
+    [[SLTestController sharedTestController] deregisterTarget:self];
+#endif
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,6 +93,13 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:[NSString stringWithFormat:@"This is an alert for item %d", indexPath.item] delegate:nil cancelButtonTitle:@"Close" otherButtonTitles: nil];
     [alert show];
+}
+
+- (void)scrollToBottom {
+    int sections = [self numberOfSectionsInCollectionView:self.collectionView];
+    int numberOfItems = [self collectionView:self.collectionView numberOfItemsInSection:sections-1];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:numberOfItems-1 inSection:sections-1];
+    [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:NO];
 }
 
 @end

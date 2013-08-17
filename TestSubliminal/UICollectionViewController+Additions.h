@@ -1,14 +1,14 @@
 //
-//  ViewController.h
+//  UICollectionViewController+Additions.h
 //  TestSubliminal
 //
-//  Created by Nico Prananta on 8/16/13.
+//  Created by Nico Prananta on 8/17/13.
 //  Copyright (c) 2013 Touches. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UICollectionViewController
+@interface UICollectionViewController (Additions)
 
 - (void)scrollToBottom;
 

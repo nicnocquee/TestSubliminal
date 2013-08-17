@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0D477CF4-BAA2-4604-A9C3-F041E741115A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestSubliminal</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>25B4A5EE-80B1-42A9-BE12-0665F081B5D7</key>
+		<string>ssh://github.com/nicnocquee/TestSubliminal.git</string>
+		<key>C3AE2E10-28CE-4C62-8323-09DB5A5B4BFF</key>
+		<string>ssh://github.com/inkling/Subliminal.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestSubliminal.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>25B4A5EE-80B1-42A9-BE12-0665F081B5D7</key>
+		<string>..</string>
+		<key>C3AE2E10-28CE-4C62-8323-09DB5A5B4BFF</key>
+		<string>../Integration Tests/Subliminal</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/nicnocquee/TestSubliminal.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>25B4A5EE-80B1-42A9-BE12-0665F081B5D7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C3AE2E10-28CE-4C62-8323-09DB5A5B4BFF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Subliminal</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>25B4A5EE-80B1-42A9-BE12-0665F081B5D7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestSubliminal</string>
+		</dict>
+	</array>
+</dict>
+</plist>

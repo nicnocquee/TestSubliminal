@@ -30,10 +30,21 @@
     SLElement *label5 = [SLElement elementWithAccessibilityLabel:@"This is cell 5"];
     SLAssertFalse([UIAElement(label5) isValid], @"Cell 5 should not be visible at this point");
     
-    // now how to test for example the last cell's label?
+    //using http://stackoverflow.com/a/18279448/401544 solution
+    
+    SLAskApp(scrollToBottom);
+    
     SLElement *lastLabel = [SLElement elementWithAccessibilityLabel:@"This is cell 19"];
-    [lastLabel scrollToVisible];
     SLAssertTrue([UIAElement(lastLabel) isVisible], @"Last cell should be visible at this point");
+    
+    /*
+    // using http://stackoverflow.com/a/18280697/401544
+    
+    SLElement *lastLabel = [SLElement elementWithAccessibilityLabel:@"This is cell 19"];
+    while (!SLWaitUntilTrue([UIAElement(lastLabel) isValidAndVisible], 1.0)) {
+        [[SLWindow mainWindow] dragWithStartOffset:CGPointMake(0.5, 0.75) endOffset:CGPointMake(0.5, 0.25)];
+    }
+     */
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03434FA917BF023D00DA14E1 /* UICollectionViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03434FA817BF023D00DA14E1 /* UICollectionViewController+Additions.m */; };
 		039DFBBF17BDC1B9006FD183 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DFBBE17BDC1B9006FD183 /* ViewController.m */; };
 		039DFBC217BDC509006FD183 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CB7D3A17BDC06000FD2D11 /* main.m */; };
 		039DFBC317BDC509006FD183 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CB7D3E17BDC06000FD2D11 /* AppDelegate.m */; };
@@ -64,12 +65,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03434FA717BF023D00DA14E1 /* UICollectionViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewController+Additions.h"; sourceTree = "<group>"; };
+		03434FA817BF023D00DA14E1 /* UICollectionViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewController+Additions.m"; sourceTree = "<group>"; };
 		039DFBAF17BDC17C006FD183 /* Subliminal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Subliminal.xcodeproj; path = Subliminal/Subliminal.xcodeproj; sourceTree = "<group>"; };
 		039DFBBD17BDC1B9006FD183 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		039DFBBE17BDC1B9006FD183 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		039DFBD117BDC509006FD183 /* TestSubliminal (Integration Tests).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestSubliminal (Integration Tests).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		039DFBD217BDC509006FD183 /* Integration Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Integration Tests-Info.plist"; path = "/Users/nico/Dropbox/Project/Experiments/TestSubliminal/Integration Tests/Integration Tests-Info.plist"; sourceTree = "<absolute>"; };
-		039DFBD617BDC570006FD183 /* Integration Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Integration Tests.xcconfig"; path = "Subliminal/Supporting Files/Xcode/Integration Tests.xcconfig"; sourceTree = "<group>"; };
+		039DFBD617BDC570006FD183 /* Integration Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Integration Tests.xcconfig"; path = "Subliminal/Supporting Files/Xcode/Integration Tests.xcconfig"; sourceTree = "<group>"; };
 		039DFBD817BDC620006FD183 /* CollectionViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewTest.m; sourceTree = "<group>"; };
 		03CB7D2B17BDC05F00FD2D11 /* TestSubliminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSubliminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CB7D2E17BDC05F00FD2D11 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -169,6 +172,8 @@
 				03CB7D3517BDC05F00FD2D11 /* Supporting Files */,
 				039DFBBD17BDC1B9006FD183 /* ViewController.h */,
 				039DFBBE17BDC1B9006FD183 /* ViewController.m */,
+				03434FA717BF023D00DA14E1 /* UICollectionViewController+Additions.h */,
+				03434FA817BF023D00DA14E1 /* UICollectionViewController+Additions.m */,
 			);
 			path = TestSubliminal;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 				03CB7D3B17BDC06000FD2D11 /* main.m in Sources */,
 				03CB7D3F17BDC06000FD2D11 /* AppDelegate.m in Sources */,
 				039DFBBF17BDC1B9006FD183 /* ViewController.m in Sources */,
+				03434FA917BF023D00DA14E1 /* UICollectionViewController+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +364,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestSubliminal/TestSubliminal-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -368,6 +378,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestSubliminal/TestSubliminal-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -434,6 +448,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestSubliminal/TestSubliminal-Prefix.pch";
 				INFOPLIST_FILE = "TestSubliminal/TestSubliminal-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -445,6 +463,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestSubliminal/TestSubliminal-Prefix.pch";
 				INFOPLIST_FILE = "TestSubliminal/TestSubliminal-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
