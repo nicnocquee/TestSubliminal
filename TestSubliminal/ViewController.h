@@ -10,6 +10,4 @@
 
 @interface ViewController : UICollectionViewController
 
-- (void)scrollToBottom;
-
 @end

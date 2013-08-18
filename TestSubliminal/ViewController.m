@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-//#import "UICollectionViewController+Additions.h"
+#import "UICollectionViewController+Additions.h"
 
 #ifdef INTEGRATION_TESTING
 #import <Subliminal/Subliminal.h>
@@ -93,13 +93,6 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:[NSString stringWithFormat:@"This is an alert for item %d", indexPath.item] delegate:nil cancelButtonTitle:@"Close" otherButtonTitles: nil];
     [alert show];
-}
-
-- (void)scrollToBottom {
-    int sections = [self numberOfSectionsInCollectionView:self.collectionView];
-    int numberOfItems = [self collectionView:self.collectionView numberOfItemsInSection:sections-1];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:numberOfItems-1 inSection:sections-1];
-    [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:NO];
 }
 
 @end
